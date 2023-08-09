@@ -1,7 +1,7 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="https://github.com/catppuccin/template">App</a>
+	Catppuccin for <a href="https://posit.co/downloads/">RStudio</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
@@ -19,37 +19,38 @@
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/latte.webp"/>
+<img src="https://raw.githubusercontent.com/AngelBerihuete/rstudio/main/assets/late.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/frappe.webp"/>
+<img src="https://raw.githubusercontent.com/AngelBerihuete/rstudio/main/assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/macchiato.webp"/>
+<img src="https://raw.githubusercontent.com/AngelBerihuete/rstudio/main/assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/mocha.webp"/>
+<img src="https://raw.githubusercontent.com/AngelBerihuete/rstudio/main/assets/mocha.webp"/>
 </details>
 
 ## Usage
 
 1. Clone this repository locally
-2. Open the app's settings
-3. Select `import theme` and browse to where you cloned Catppuccin
-4. Select it
+2. Open RStudio and select `Global options` in the `Tools` menu 
+3. Select `Appearance` option
+4. Click on the `Add` button and browse to where you cloned Catppuccin
+5. Select it
 
 <!-- this section is optional -->
-## 🙋 FAQ
+<!-- ## 🙋 FAQ -->
 
--	Q: **_"Where can I find the doc?"_**\
-	A: Run `:help theme`
+<!-- -	Q: **_"Where can I find the doc?"_**\ -->
+<!-- 	A: Run `:help theme` -->
 
 ## 💝 Thanks to
 
-- [Human](https://github.com/catppuccin)
+- [Berihuete](https://github.com/AngelBerihuete)
 
 &nbsp;
 
