@@ -1,154 +1,144 @@
 /* rs-theme-name: catppuccin-frappe */
 /* rs-theme-is-dark: TRUE */
 
-/* based on auto-generated theme with manual adjustments */
-
-/*
-  A few shaed bassed on Surface1 are semi-transparent, which requires using the rgba() function
-  If this needs to be adjusted, search for "CHECKME: semi-transparent version of Surface1" to find this in the document
-*/ 
-
 :root {
-  --Rosewater: #f2d5cf;
-  --Flamingo: #eebebe;
-  --Pink: #f4b8e4;
-  --Mauve: #ca9ee6;
-  --Red: #e78284;
-  --Maroon: #ea999c;
-  --Peach: #ef9f76;
-  --Yellow: #e5c890;
-  --Green: #a6d189;
-  --Teal: #81c8be;
-  --Sky: #99d1db;
-  --Sapphire: #85c1dc;
-  --Blue: #8caaee;
-  --Lavender: #babbf1;
-  --Text: #c6d0f5;
-  --Subtext1: #b5bfe2;
-  --Subtext0: #a5adce;
-  --Overlay2: #949cbb;
-  --Overlay1: #838ba7;
-  --Overlay0: #737994;
-  --Surface2: #626880;
-  --Surface1: #51576d;
-  --Surface0: #414559;
-  --Base: #303446;
-  --Mantle: #292c3c;
-  --Crust: #232634;
+  --rosewater: #f2d5cf;
+  --flamingo: #eebebe;
+  --pink: #f4b8e4;
+  --mauve: #ca9ee6;
+  --red: #e78284;
+  --maroon: #ea999c;
+  --peach: #ef9f76;
+  --yellow: #e5c890;
+  --green: #a6d189;
+  --teal: #81c8be;
+  --sky: #99d1db;
+  --sapphire: #85c1dc;
+  --blue: #8caaee;
+  --lavender: #babbf1;
+  --text: #c6d0f5;
+  --subtext1: #b5bfe2;
+  --subtext0: #a5adce;
+  --overlay2: #949cbb;
+  --overlay1: #838ba7;
+  --overlay0: #737994;
+  --surface2: #626880;
+  --surface1: #51576d;
+  --surface0: #414559;
+  --base: #303446;
+  --mantle: #292c3c;
+  --crust: #232634;
 }
 
 .ace_gutter {
-  background: var(--Base);
-  color: var(--Subtext0); /* other theme sets this to #838995, but this is not part of Nord palette */
+  background: var(--base);
+  color: var(--subtext0); /* other theme sets this to #838995, but this is not part of Nord palette */
 }
 
 .ace_gutter-active-line {
-  background: var(--Surface1); /* other theme sets transparency to 0.32 */
+  background: var(--surface1); /* other theme sets transparency to 0.32 */
 }
 
 .ace_print-margin {
   width: 1px;
-  background: var(--Surface0); /* other theme sets this to #e8e8e8, but this is not part of Nord palette */
+  background: var(--surface0); /* other theme sets this to #e8e8e8, but this is not part of Nord palette */
 }
 
 .ace_editor, .rstudio-themes-flat.ace_editor_theme .profvis-flamegraph, .rstudio-themes-flat.ace_editor_theme, .rstudio-themes-flat .ace_editor_theme {
-  background-color: var(--Base);
-  color: var(--Subtext0);
+  background-color: var(--base);
+  color: var(--subtext0);
 }
 
 .ace_cursor {
-  color: var(--Subtext0);
+  color: var(--subtext0);
 }
 
-/* CHECKME: semi-transparent version of Surface1, needs to be updated manually */
 .ace_marker-layer .ace_selection {
-  background: rgba(67, 76, 94, 0.80); /* Surface1, semi-transparent */
+  background: rgba(81, 87, 109, 0.80);
 }
 
 
 .ace_selection.ace_start {
-  box-shadow: 0 0 3px 0px var(--Base);
+  box-shadow: 0 0 3px 0px var(--base);
   border-radius: 2px;
 }
 
 /* unclear function, could not find in documentation */
 .ace_marker-layer .ace_step {
-  background: var(--Surface0); /* other theme sets this to rgb(198, 219, 174), but this is not part of Nord palette */
+  background: var(--surface0); /* other theme sets this to rgb(198, 219, 174), but this is not part of Nord palette */
 }
 
 /* Changes the color and style of the highlighting on matching brackets. */
 .ace_marker-layer .ace_bracket {
   margin: -1px 0 0 -1px;
-  border: 1px solid var(--Text); /* other theme sets this to Surface2, but not clear why */
+  border: 1px solid var(--text); /* other theme sets this to Surface2, but not clear why */
 }
 
-/* CHECKME: semi-transparent version of Surface1, needs to be updated manually */
 .ace_marker-layer .ace_active-line {
-  background: rgba(67, 76, 94, 0.32); /* Surface1, semi-transparent */
+  background: rgba(81, 87, 109, 0.32);
 }
 
-/* CHECKME: semi-transparent version of Surface1, needs to be updated manually */
 .ace_marker-layer .ace_selected-word {
-  border: 1px solid rgba(67, 76, 94, 0.80); /* Surface1, semi-transparent */
+  border: 1px solid rgba(81, 87, 109, 0.80);
 }
 
 .ace_fold {
-  background-color: var(--Sapphire);
-  border-color: var(--Surface0); /* Surface0 is standard color for borders, but other theme has used Subtext0 here */
+  background-color: var(--sapphire);
+  border-color: var(--surface0); /* Surface0 is standard color for borders, but other theme has used Subtext0 here */
 }
 
-/* whitespace / line break characters - usually invisible, but can be switched to visible in the preferences */ 
+/* whitespace / line break characters - usually invisible, but can be switched to visible in the preferences */
 .ace_invisible {
-  color: var(--Surface2);
+  color: var(--surface2);
 }
 
 .ace_keyword, ace_meta {
-  color: var(--Blue);
+  color: var(--blue);
 }
 
 .ace_keyword.ace_operator {
-  color: var(--Blue);
+  color: var(--blue);
 }
 
 /* language constants like TRUE and  FALSE */
 .ace_constant.ace_language {
-  color: var(--Blue);
+  color: var(--blue);
 
 }
 
 .ace_constant.ace_numeric {
-  color: var(--Mauve);
+  color: var(--mauve);
 
 }
 
 /* probably referring to escape characters, but not entirely clear */
 .ace_constant.ace_character.ace_escape {
-  color: var(--Yellow);
+  color: var(--yellow);
 }
 
 .ace_constant.ace_other {
-  color: var(--Subtext0);
+  color: var(--subtext0);
 
 }
 
 /* Changes the color and style of code blocks in RMarkdown documents. */
 .ace_support.ace_function {
-  color: var(--Sapphire);
+  color: var(--sapphire);
 
 }
 
 .ace_support.ace_constant {
-  color: var(--Teal);
+  color: var(--teal);
 
 }
 
 .ace_support.ace_class {
-  color: var(--Teal);
+  color: var(--teal);
 
 }
 
 .ace_support.ace_type {
-  color: var(--Teal);
+  color: var(--teal);
 
 }
 
@@ -156,102 +146,102 @@
 .ace_meta.ace_tag,
 .ace_storage,
 .ace_storage.ace_type {
-  color: var(--Blue);
+  color: var(--blue);
 
 }
 
 .ace_invalid.ace_illegal {
-  color: var(--Subtext0);
-  background-color: var(--Red);
+  color: var(--subtext0);
+  background-color: var(--red);
 }
 
 .ace_invalid.ace_deprecated {
-  color: var(--Subtext0);
-  background-color: var(--Yellow);
+  color: var(--subtext0);
+  background-color: var(--yellow);
 }
 
 .ace_string {
-  color: var(--Green);
+  color: var(--green);
 }
 
 .ace_string.ace_regexp {
-  color: var(--Yellow);
+  color: var(--yellow);
 }
 
 .ace_comment {
-  color: var(--Surface2);
+  color: var(--surface2);
 
 }
 
 /* could not find documentation, but looks very high-level. unclear what it actually is */
 .ace_variable {
-  color: var(--Sapphire);
+  color: var(--sapphire);
 }
 
 /* could not find documentation, but looks very high-level. unclear what it actually is */
 .ace_variable.ace_language {
-  color: var(--Blue);
+  color: var(--blue);
 }
 
 .ace_variable.ace_parameter {
-  color: var(--Subtext0);
+  color: var(--subtext0);
 
 }
 
 .ace_entity.ace_other,
 .ace_entity.ace_other.ace_attribute-name {
-  color: var(--Teal);
+  color: var(--teal);
 
 }
 
 .ace_entity.ace_name.ace_function {
-  color: var(--Sapphire);
+  color: var(--sapphire);
 }
 
 /* Characters that start a heading in RMarkdown documents. */
 .ace_markup.ace_heading {
-  color: var(--Sapphire);
+  color: var(--sapphire);
 }
 
 .nocolor.ace_editor .ace_line span {
-  color: var(--Subtext0) !important;
+  color: var(--subtext0) !important;
 }
 
 .ace_bracket {
   margin: 0 !important;
   border: 0 !important;
   background-color: rgba(128, 128, 128, 0.5);
-  color: var(--Text);
+  color: var(--text);
 }
 
 .ace_marker-layer .ace_foreign_line {
   position: absolute;
   z-index: -1;
-  background-color: var(--Base);
+  background-color: var(--base);
 }
 .ace_marker-layer .ace_active_debug_line {
   position: absolute;
   z-index: -1;
-  background-color: var(--Surface1);
+  background-color: var(--surface1);
 }
 .ace_marker-layer .ace_find_line {
   position: absolute;
   z-index: -1;
-  background-color: var(--Surface1);
+  background-color: var(--surface1);
 }
 
 .ace_console_error {
-  background-color: var(--Surface1);
-  color: var(--Red) !important;
+  background-color: var(--surface1);
+  color: var(--red) !important;
 }
 
 #rstudio_console_output .ace_constant.ace_language {
-  color: var(--Red) !important;
+  color: var(--red) !important;
 }
 
 .terminal {
-  background-color: var(--Base);
-  color: var(--Subtext0);
+  background-color: var(--base);
+  color: var(--subtext0);
   font-feature-settings: "liga" 0;
   position: relative;
   user-select: none;
@@ -280,7 +270,7 @@
    background-color: #CCC;
 }
 .terminal .xterm-viewport {
-  background-color: var(--Base);
+  background-color: var(--base);
   overflow-y: scroll;
 }
 
@@ -301,9 +291,9 @@
 }
 
 .rstudio-themes-flat.rstudio-themes-dark-menus .ace_editor.ace_autocomplete {
-    background: var(--Surface0);
-    border: solid 1px var(--Surface2) !important;
-    color: var(--Subtext0);
+    background: var(--surface0);
+    border: solid 1px var(--surface2) !important;
+    color: var(--subtext0);
 }
 
 .rstudio-themes-flat.rstudio-themes-dark-menus .ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line,
